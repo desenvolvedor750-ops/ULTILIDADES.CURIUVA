@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Utilidades Curiúva</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #fff5f8, #f8dce5);
+            color: #4a1428;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #7d1738;
+            color: white;
+            text-align: center;
+            padding: 25px 15px 18px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            padding: 14px 15px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            overflow-x: auto;
+        }
+
+        nav a {
+            color: #7d1738;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d33b69;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 45px 20px 35px;
+        }
+
+        .inicio h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: #7d1738;
+        }
+
+        .inicio p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        .foto-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px 35px;
+        }
+
+        .foto-container img {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+            display: block;
+            background: white;
+            border-radius: 18px;
+            padding: 5px;
+            box-shadow: 0 8px 25px rgba(80, 10, 35, 0.20);
+        }
+
+        .whatsapp {
+            text-align: center;
+            padding: 10px 20px 45px;
+        }
+
+        .whatsapp a {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 15px 28px;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+            transition: 0.3s;
+        }
+
+        .whatsapp a:hover {
+            transform: translateY(-3px);
+            background: #1ebe5d;
+        }
+
+        footer {
+            background: #7d1738;
+            color: white;
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            nav {
+                justify-content: flex-start;
+                gap: 18px;
+            }
+
+            .inicio {
+                padding-top: 35px;
+            }
+
+            .inicio h2 {
+                font-size: 24px;
+            }
+
+            .foto-container img {
+                width: 280px;
+                height: 370px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            header {
+                padding: 20px 10px 15px;
+            }
+
+            header h1 {
+                font-size: 21px;
+                letter-spacing: 1px;
+            }
+
+            nav {
+                padding: 12px;
+                gap: 16px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .inicio {
+                padding: 30px 15px 20px;
+            }
+
+            .inicio h2 {
+                font-size: 22px;
+            }
+
+            .inicio p {
+                font-size: 15px;
+            }
+
+            .foto-container {
+                padding-bottom: 30px;
+            }
+
+            .foto-container img {
+                width: 250px;
+                height: 330px;
+            }
+
+            .whatsapp a {
+                font-size: 16px;
+                padding: 14px 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>UTILIDADES CURIÚVA</h1>
+        <p>Miah Oliver Studio</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#casa">Casa</a>
+        <a href="#roupas">Roupas</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#perfumes">Perfumes</a>
+        <a href="#maquiagens">Maquiagens</a>
+        <a href="#stanley">Stanley</a>
+        <a href="#xerox">Xerox</a>
+        <a href="#mochilas">Mochilas</a>
+        <a href="#bolsas">Bolsas</a>
+    </nav>
+
+    <main>
+
+        <section class="inicio">
+            <h2>Bem-vindo à Utilidades Curiúva</h2>
+
+            <p>
+                Encontre produtos e utilidades para o seu dia a dia.
+                Entre em contato conosco pelo WhatsApp para saber mais.
+            </p>
+        </section>
+
+        <section class="foto-container">
+            <img src="FOTO.JPG" alt="Utilidades Curiúva">
+        </section>
+
+        <section class="whatsapp">
+            <a href="https://wa.me/5541988704110" target="_blank">
+                💬 Fale conosco pelo WhatsApp
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Utilidades Curiúva © 2026</p>
+        <p>Miah Oliver Studio</p>
+    </footer>
+
+</body>
+</html>
+```
