@@ -1,6 +1,7 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,6 +85,7 @@
             font-size: 17px;
         }
 
+        /* FOTO PRINCIPAL */
         .foto-container {
             display: flex;
             justify-content: center;
@@ -93,7 +95,8 @@
 
         .foto-container img {
             width: 300px;
-            height: 400px;
+            height: auto;
+            max-width: 100%;
             object-fit: contain;
             display: block;
             background: white;
@@ -158,7 +161,6 @@
 
             .foto-container img {
                 width: 280px;
-                height: 370px;
             }
         }
 
@@ -200,7 +202,6 @@
 
             .foto-container img {
                 width: 250px;
-                height: 330px;
             }
 
             .whatsapp a {
@@ -242,8 +243,25 @@
             </p>
         </section>
 
+        <!--
+        IMPORTANTE:
+        O arquivo FOTO.jpg precisa estar na mesma pasta
+        deste arquivo index.html.
+        -->
+
         <section class="foto-container">
-            <img src="FOTO.JPG" alt="Utilidades Curiúva">
+
+            <img
+                src="./FOTO.jpg"
+                alt="Utilidades Curiúva"
+                onerror="this.style.display='none'; document.getElementById('erro-foto').style.display='block';">
+
+            <p id="erro-foto" style="display:none; color:#7d1738; font-weight:bold;">
+                Não foi possível carregar a imagem.<br>
+                Verifique se o arquivo se chama exatamente FOTO.jpg
+                e está na mesma pasta do index.html.
+            </p>
+
         </section>
 
         <section class="whatsapp">
@@ -262,3 +280,56 @@
 </body>
 </html>
 ```
+
+**No GitHub, deixe os arquivos assim:**
+
+```text
+seu-repositorio/
+│
+├── index.html
+└── FOTO.jpg
+```
+
+⚠️ **Muito importante:** GitHub diferencia maiúsculas e minúsculas.
+
+Se o nome real da sua foto for:
+
+```text
+FOTO.jpg
+```
+
+use:
+
+```html
+<img src="./FOTO.jpg">
+```
+
+Se for:
+
+```text
+FOTO.JPG
+```
+
+use:
+
+```html
+<img src="./FOTO.JPG">
+```
+
+Se for:
+
+```text
+foto.jpg
+```
+
+use:
+
+```html
+<img src="./foto.jpg">
+```
+
+**Minha recomendação:** renomeie a foto no seu computador para **`FOTO.jpg`** e coloque ela **na mesma pasta do `index.html`**. Depois envie os dois arquivos para o GitHub e aguarde alguns minutos para o GitHub Pages atualizar.
+
+          
+       
+  
